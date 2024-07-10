@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB-Bill CALCULATOR</title>
+</head>
+<link rel="stylesheet" type="text/css" media="screen" href="Eb-bill.css" />
+    <script defer src="Eb-bill.js"></script>
+<form method="get" action="/" id="form">
+<body id="body">
+    
+    <div id="cpc">
+            <h2  >EB BILL CALCULATOR</h2>
+    <div id="inputgroup">
+        <label for="service_number">Enter Customer service number(Ex: 11061049863)</label>
+            <input type="number" name="service_number" id="csn">
+        <div id="error1"><br></div>
+    </div>
+
+    <div id="inputgroup">
+        <label for="PMrate">Enter Previous meter rate(PMR) </label>
+            <input type="number" name="PMrate" id="pmr">
+        <div id="error2"><br></div>
+    </div>
+
+    <div id="inputgroup">
+        <label for="CMrate">Enter Current meter rate(CMR)</label>
+            <input type="number" name="CMrate" id="cmr">
+        <div id="error3"><br></div>
+    </div>
+
+    <div id="buttons">
+        <button id="reset" type="reset">RESET</button>
+        <button id="sub" type="submit">SUBMIT</button>
+    </div>
+    
+    </div>
+</body>
+</form>
+<h2 id="total"></h2>
+</html>

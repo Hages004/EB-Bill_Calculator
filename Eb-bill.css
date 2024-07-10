@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+body{
+    background-image: url(eb.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(14, 7, 54);
+}
+#form{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2); /* Optional: Glass effect background */
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border */
+    gap: 10px;
+}
+h2{
+    text-align: center;
+    margin-top: -5px;
+}
+#cpc{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10%;
+}
+input:focus{
+    outline: 0;
+}
+
+#csn,#pmr,#cmr{
+    margin-top: 10px;
+}
+#inputgroup{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#inputgroup input{
+    border:  rgb(8, 3, 58) 0.5px solid;
+    border-radius: 3px;
+    padding-top: 5px ;
+    padding-left: 6px;
+    padding-bottom: 5px;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+button{
+    background-color: rgb(8, 3, 58);
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 5px 15px ;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    background-color: aliceblue;
+    border: rgb(8, 3, 58) 1.6px solid;
+    color: rgb(8, 3, 58);
+    font-weight: bold;
+}
+
+#error1,#error2,#error3{
+    color: red;
+    font-size: 10px;
+}
+#total{
+    background-color: rgb(255, 253, 253);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin-top: 70vh ;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    color: black;
+}
